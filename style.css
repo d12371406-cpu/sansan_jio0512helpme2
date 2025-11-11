@@ -63,7 +63,10 @@ nav .logo {
 /* === 首頁 Hero（森林呼吸特效） === */
 .hero {
   height: 100vh;
-  background: url('images_01/myforest.jpg.jpg') center/cover no-repeat;
+  background-image: url('images_01/myforest.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,6 +76,12 @@ nav .logo {
   overflow: hidden;
   animation: bgZoom 10s ease-in-out infinite alternate;
 }
+
+@keyframes bgZoom {
+  0% { background-size: 100%; }
+  100% { background-size: 110%; }
+}
+
 /* === 各頁 Hero 背景圖片 === */
 .hero-home {
   background: url('images_01/myforest.jpg.jpg') center/cover no-repeat;
@@ -207,3 +216,4 @@ button:hover {
   box-shadow: 0 3px 6px rgba(0,0,0,0.15);
   animation: fadeIn 1.5s ease;
 }
+
