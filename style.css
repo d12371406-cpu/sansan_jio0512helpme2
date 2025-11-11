@@ -84,8 +84,10 @@ nav .logo {
 
 /* === 各頁 Hero 背景圖片 === */
 .hero-home {
-  background: url('images_01/myforest.jpg') center/cover no-repeat;
+  background: url('/sansan_jio0512helpme2/images_01/myforest.jpg') center/cover no-repeat;
+  animation: bgZoom 10s ease-in-out infinite alternate;
 }
+
 
 .hero-about {
   background: url('images_01/intu.jpg') center/cover no-repeat;
@@ -216,5 +218,6 @@ button:hover {
   box-shadow: 0 3px 6px rgba(0,0,0,0.15);
   animation: fadeIn 1.5s ease;
 }
+
 
 
